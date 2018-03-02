@@ -1,0 +1,17 @@
+body {
+  background-color: #353535;
+}
+
+body > .container-fluid {
+  padding-top: 60px;
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}

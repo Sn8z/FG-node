@@ -1,0 +1,79 @@
+<div class="row">
+	<div class="col-sm-4">
+		<div class="row">
+			<div class="col-sm-12">
+				<a ng-repeat="n in news" href="{{n.link}}" target="_blank">
+					<div style="width:100%;height:90px;padding:10px;background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{n.enclosure.url}});">
+						<p class="text-light">{{n.title}}</p>
+					</div>
+				</a>
+				<p>Provided by
+					<a class="text-danger" href="https://www.gosugamers.net/" target="_blank">GosuGamers</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<table class="table table-sm table-dark">
+			<thead>
+				<tr>
+					<td>
+						<h2>/r/Gaming</h2>
+					</td>
+				</tr>
+			</thead>
+			<tr ng-repeat="r in reddit">
+				<td>
+					<a class="text-light" href="{{r.link}}" target="_blank">{{r.title}}</a>
+				</td>
+			</tr>
+		</table>
+
+		<table class="table table-sm table-dark">
+			<thead>
+				<tr>
+					<td>
+						<h2>/r/Esports</h2>
+					</td>
+				</tr>
+			</thead>
+			<tr ng-repeat="e in esports">
+				<td>
+					<a class="text-light" href="{{e.link}}" target="_blank">{{e.title}}</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="col-sm-4">
+		<div class="row">
+			<div class="col">
+				<iframe src="https://player.twitch.tv/?channel=shroud" frameborder="0" allowfullscreen="true" scrolling="no" width="100%"
+				 height="400px"></iframe>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6" style="height:auto;padding:15px;">
+				<img class="img-fluid" src="https://pbs.twimg.com/profile_images/638747380494503936/C89d1hl3_400x400.jpg" />
+			</div>
+			<div class="col-sm-6" style="height:auto;padding:15px;">
+				<img class="img-fluid" src="https://pbs.twimg.com/profile_images/638747380494503936/C89d1hl3_400x400.jpg" />
+			</div>
+			<div class="col-sm-6" style="height:auto;padding:15px;">
+				<img class="img-fluid" src="https://pbs.twimg.com/profile_images/638747380494503936/C89d1hl3_400x400.jpg" />
+			</div>
+			<div class="col-sm-6" style="height:auto;padding:15px;">
+				<img class="img-fluid" src="https://pbs.twimg.com/profile_images/638747380494503936/C89d1hl3_400x400.jpg" />
+			</div>
+			<div class="col-sm-6" style="height:auto;padding:15px;">
+				<img class="img-fluid" src="https://pbs.twimg.com/profile_images/638747380494503936/C89d1hl3_400x400.jpg" />
+			</div>
+			<div class="col-sm-6" style="height:auto;padding:15px;">
+				<img class="img-fluid" src="https://pbs.twimg.com/profile_images/638747380494503936/C89d1hl3_400x400.jpg" />
+			</div>
+			<div class="col-sm-6" style="height:auto;padding:15px;">
+				<img class="img-fluid" src="https://pbs.twimg.com/profile_images/638747380494503936/C89d1hl3_400x400.jpg" />
+			</div>
+
+		</div>
+	</div>
+</div>
